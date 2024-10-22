@@ -164,6 +164,7 @@ ul {
 }
 .form-input{
     -webkit-appearance: none;
+    appearance: none;
     background: #f8f8f8;
     border-radius: 10px;
     border: none;
@@ -417,18 +418,18 @@ uil {
         bottom: 0;
         height: 100%;
         left: 0;
-        overflow: hidden;
+        overflow-x: hidden;
         position: fixed;
         right: 0;
         top: 0;
         width: 100%;
     }
     #js-scroll-content {
-        position: absolute;
-        overflow: hidden;
-        width: 100%;
-        top: 0;
         left: 0;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        width: 100%;
     }
 }
 
@@ -438,31 +439,31 @@ uil {
     }
 }
 .main-banner {
-    padding: 200px 0 300px;
     min-height: 100vh;
+    padding: 200px 0 300px;
     position: relative;
 }
 
 .js-parallax-scene {
+    height: 100%;
+    left: 0;
     position: absolute;
     top: 0;
-    left: 0;
     width: 100%;
-    height: 100%;
 }
 
 .banner-img-wp {
-    width: 100%;
     height: 100%;
     padding-left: 30px;
+    width: 100%;
 }
 .banner-img {
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
     animation: biani 4.5s linear infinite alternate;
+    background-position: center;
+    background-size: cover;
     box-shadow: 0 0px 20px rgba(36, 39, 37, 0.3);
+    height: 100%;
+    width: 100%;
 }
 @keyframes biani {
     0% {
@@ -480,31 +481,31 @@ uil {
 }
 
 .banner-img-text .h5-title {
-    text-transform: capitalize;
     letter-spacing: 0.5px;
+    text-transform: capitalize;
 }
 .banner-img-text {
     max-width: 400px;
 }
 .banner-shape-1 img {
-    position: absolute;
+    filter: blur(3px);
     left: 85%;
-    top: 60px;
     max-width: 150px;
     pointer-events: none;
-    filter: blur(3px);
+    position: absolute;
+    top: 60px;
 }
 .banner-shape-2 {
-    top: auto !important;
     bottom: 0;
+    top: auto !important;
 }
 .banner-shape-2 img {
-    position: absolute;
     bottom: 0;
-    right: 82% !important;
+    filter: blur(3px);
     max-width: 410px;
     pointer-events: none;
-    filter: blur(3px);
+    position: absolute;
+    right: 82% !important;
 }
 .sec-wp {
     position: relative;
@@ -512,17 +513,17 @@ uil {
 }
 .h1-title {
     font-size: 90px;
-    line-height: 108px;
-    text-transform: capitalize;
-    margin-bottom: 25px;
     font-weight: 900;
+    line-height: 108px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
 }
 .h1-title span {
-    color: #ff8243;
     background-image: linear-gradient(0deg, rgb(13, 13 37 /8%), rgb(13 13 37 /8%));
-    background-size: 100% 15px;
     background-position: 0 90%;
     background-repeat: no-repeat;
+    background-size: 100% 15px;
+    color: #ff8243;
     display: inline;
     transition: 0.8s cubic-bezier(0.22, 0.78, 0.45, 1.02);
 }
@@ -537,29 +538,54 @@ p {
 }
 
 .sec-btn {
-    min-width: 120px;
-    min-height: 58px;
+    align-items: center;
     background: #f3f3f5;
+    border-radius: 30px;
+    border: none;
     box-shadow: 9px 9px 12px b2b2b3, -9px -9px 12px #ffffff;
+    color: #0d0d25;
+    cursor: pointer;
     display: inline-flex;
     justify-content: center;
-    align-items: center;
-    border-radius: 30px;
-    color: #0d0d25;
-    text-transform: capitalize;
-    text-align: center;
-    border: none;
-    cursor: pointer;
+    min-height: 58px;
+    min-width: 120px;
     outline: none !important;
-    transition: 0.8s cubic-bezier(0.22, 0.78, 0.45, 1.02);
     overflow: hidden;
-    position: relative;
-    z-index: 2;
     padding: 6px 30px;
+    position: relative;
+    text-align: center;
+    text-transform: capitalize;
+    transition: 0.8s cubic-bezier(0.22, 0.78, 0.45, 1.02);
+    z-index: 2;
 }
 
 .sec-btn:hover {
     border-color: #0d0d25;
     box-shadow: inset 9px 9px 12px #cccccc, inset -9px -9px 12px #ffffff;
     color: #0d0d25;
+}
+
+
+/* ************************** */
+.brands-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -15 px;
+}
+.brands-box {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 0 15px;
+}
+.brands-box:hover {
+    filter: brightness(0.3);
+    opacity: 0.9;
+}
+
+.brand-title h5-title {
+    font-weight: 500;
+    letter-spacing: 2px;
+    opacity: 0.7;
+    text-transform: uppercase;
 }
