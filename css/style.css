@@ -305,7 +305,7 @@ uil {
     }
     .header-menu {
         background-color: #f3f3f5;
-        background-image: url(img/blog-pattern-bg.png);
+        background-image: url(img/blog-pattern-bg);
         background-position: center;
         height: 100vh;
         left: 0;
