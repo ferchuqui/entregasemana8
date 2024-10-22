@@ -589,3 +589,80 @@ p {
     opacity: 0.7;
     text-transform: uppercase;
 }
+
+
+/* ****************** */
+.section {
+    padding-bottom: 100px;
+    padding-top: 100px;
+    position: relative;
+}
+.sec-sub-title{
+    background: f3f3f5;
+    border-radius: 60px;
+    box-shadow: 9px 9px 12px e4e4e4, -9px -9px 12px #ffffff;
+    color: #ff8243;
+    display: inline-block;
+    font-size: 14px;
+    padding: 3px 20px;
+    text-transform: uppercase;
+}
+.h2-title {
+    font-size: 46px;
+    line-height: 56px;
+    margin-bottom: 15px;
+    position: relative;
+    text-transform: capitalize;
+}
+
+.h2-title span, .h3-title span, .h4-title span, .h5-title span, .sub-title span {
+    display: block;
+}
+.about-video-img{
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    border-radius: 40px;
+    box-shadow: 0 0 20px rgb(36, 39 37 /30%);
+    display: flex;
+    height: 55vh;
+    justify-content: center;
+    min-height: 400px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.play-btn {
+    align-items: center;
+    background: #f3f3f5;
+    border-radius: 50%;
+    box-shadow: 9px 9px 12px #b2b2b3, -9x -9x 12px #ffffff;
+    display: inline-flex;
+    font-size: 40px;
+    height: 90px;
+    justify-content: center;
+    padding-left: 4px;
+    padding-top: 4px;
+    position: relative;
+    transition: 0.5s;
+    vertical-align: middle;
+    width: 90px;
+    z-index: 2;
+}
+
+.play-btn:hover {
+    box-shadow: inset 9px 9px 12px #cccccc, inset -9px -9x 12px #ffffff;
+}
+.play-btn-wp{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    text-align: center;
+}
+.play-btn-wp span {
+    color: #bfbfbf;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 20px;
+}
