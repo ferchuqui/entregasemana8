@@ -20,7 +20,15 @@ body, html {
 img {
     max-width: 100%;
 }
-
+.logo-container{
+    display: flex;
+    align-items: center;
+}
+.logo-text{
+    margin-left:10px;
+    font-size: 20px;
+    color: #0d0d25;
+}
 .site-header {
     align-items: center;
     border-bottom: 1px solid transparent;
@@ -101,6 +109,7 @@ ul {
     box-shadow: inset 8px 8px 12px #e2e2e2, inset -8px -8px 12px #ffffff;
     color: #ff8243;
 }
+
 .header-right {
     align-items: center;
     display: flex;
@@ -651,7 +660,7 @@ p {
 }
 
 .play-btn:hover {
-    box-shadow: inset 9px 9px 12px #cccccc, inset -9px -9x 12px #ffffff;
+    box-shadow: inset 9px 9px 12px #cccccc, inset -9px -9px 12px #ffffff;
 }
 .play-btn-wp{
     align-items: center;
