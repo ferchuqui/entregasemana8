@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 /* font-family: 'Playfair Display', serif;
 font-family: 'Poppins', sans-serif; */
-
+* {
+    scroll-behavior: smooth;
+}
 body {
     background: #f3f3f5;
     font-family: 'Poppins', sans-serif;
@@ -107,7 +109,7 @@ ul {
 .main-navigation .menu .sub-menu li .active-sub-menu {
     background: #f3f3f5;
     box-shadow: inset 8px 8px 12px #e2e2e2, inset -8px -8px 12px #ffffff;
-    color: #ff8243;
+    color: #ff8243; 
 }
 
 .header-right {
@@ -187,7 +189,7 @@ ul {
 * {
     -webkit-tap-highlight-color: transparent;
 }
-uil {
+.uil {
     color: #ff8243;
 }
 
@@ -367,6 +369,7 @@ uil {
     .site-header.sticky_head, .site-header {
         background: rgb(255 255 255 /90%);
     }
+    /* Da el color transparente a la barra de nav */
     body{
         height: auto !important;
     }
@@ -607,7 +610,7 @@ p {
     position: relative;
 }
 .sec-sub-title{
-    background: f3f3f5;
+    background: #f3f3f5;
     border-radius: 60px;
     box-shadow: 9px 9px 12px e4e4e4, -9px -9px 12px #ffffff;
     color: #ff8243;
@@ -675,3 +678,14 @@ p {
     font-weight: bold;
     margin-left: 20px;
 }
+
+
+
+
+
+
+
+
+
+
+/* scroll bar design */ 
