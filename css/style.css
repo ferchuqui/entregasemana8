@@ -689,3 +689,178 @@ p {
 
 
 /* scroll bar design */ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ****************************** */
+
+.repeat-img {
+    background-size: contain;
+    background-repeat: repeat;
+}
+.menu-tab-wp {
+    margin-bottom: 80px;
+}
+.menu-tab ul {
+    background: linear-gradient(145deg, #ececec, #ffffff);
+    border-radius: 60px;
+    box-shadow: 28px 28px 55px #d4d4d4, -28px -28px 55px #ffffff;
+    display: inline-block;
+    padding: 10px;
+    position: relative;
+    z-index: 2;
+    /* genera un cuadro blanco sombreado */
+}
+
+.menu-tab ul li, .menu-tab ul .filter-active {
+    align-items: center;
+    
+    border-radius: 30px; /* borde redondeado en cada item*/
+    cursor: pointer;
+    display: inline-flex; /* los items se ponen uno al lado del otro*/
+    font-size: 18px;
+    justify-content: center;
+    line-height: normal;
+    padding: 10px 26px;
+    text-transform: capitalize;
+    transition: 0.3s;
+}
+.filter-active {
+    left: 0;
+    min-height: 50px;
+    position: absolute;
+    top: 12px;
+    z-index: -1;
+}
+.menu-tab ul li img {
+    margin-right: 10px;
+    position: relative;
+    top: 1px;
+}
+.menu-tab ul .filter-active {
+    color: #ffffff;
+    background: linear-gradient(145deg, #e3a92b, #ffc933);
+}
+.menu-list-row .bydefault_show .dish-box-wp {
+    display: inline-block !important;
+}
+.dish-box-wp {
+    display: none;
+}
+.dish-box{
+    background: linear-gradient(145deg, #ececec #ffffff);
+    border-radius: 30px;
+    box-shadow: 28px 28px 45px #d4d4d4, -28px -28px 45px ; /* el original tenia #ffffff pero lo quite */
+    display: flow-root;
+    margin: 130px 0 30px;
+    padding-top: 0;
+    padding: 0 30px 40px;
+    transition: 0.8s cubic-bezier(0.22, 0.78, 0.45, 1.02);
+}
+.dish-box:hover {
+    transform: scale(1.1); /*Que sucede cuando estamos encima*/
+}
+.dist-img {/* El cuadro que abarca la imagen */
+    margin-top: -130px;
+    margin-bottom: 30px;
+}
+
+.dist-img img { /*el cuadro de la imagen*/
+    border-radius: 50%;
+    box-shadow: 28px 28px 45px #d4d4d4, -28px -28px 45px #ffffff;
+    overflow: hidden; /*queda el circulo mitad por fuera de la imagen*/
+}
+.dish-rating{
+    font-size: 20px;
+}
+.dish-rating span {
+    color: #ffc933;
+    margin-left: 2px;
+    font-size: 22px;
+}
+
+.dish-title {
+    padding: 0 30px;
+}
+.dish-title .h3-title{
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; /* Número de líneas visibles */
+    color: #0d0d25;
+    display: -webkit-box;
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-weight: bold;
+    margin-bottom: 5px;
+    min-height: 76px;
+    overflow: hidden;
+    text-transform: capitalize;
+    transition: 0.3s;
+}
+.dish-title p{
+    color: #bfbfbf;
+}
+.dish-info ul, .dist-bottom-row ul {
+    /* background-color: red; */
+    display: flex; 
+    justify-content: space-between; /*quedan formadas 2 columnas */
+    text-align: left; 
+}
+
+.dish-info ul li{
+    display: inline-block;
+    flex: 1;/* acerca las columnas al lado izquierdo*/
+}
+.dish-info ul li p {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 2px;
+    text-transform: capitalize;
+}
+.dish-info ul li b {
+    font-weight: 600;
+}
+.dish-info,.dist-bottom-row{
+    padding: 0 30px;
+}
+.dish-info {
+    border-bottom: 2px solid rgb(204 204 204 /30%);
+    margin: 30px 0 30px;
+    padding-bottom: 30px;
+}
+.dist-bottom-row ul li {
+    align-items: center;
+    display: flex;
+}
+.dist-bottom-row ul li b{
+    font-size: 30px;
+}
+.dish-add-btn {
+    background: linear-gradient(145deg, #ffc954, #ffbc00);
+    border-radius: 10px;
+    border: none;
+    box-shadow: inset 4px 4px 8px #d6a029, inset -4px -4px 8px #ffd837;
+    color: #ffffff;
+    height: 40px;
+    transition: 0.3s;
+    width: 40px;
+}
+.dish-add-btn i {
+    color: #ffffff;
+    font-size: 22px;
+}
+.dish-add-btn:hover{
+    background: linear-gradient(145deg,#e3a92b,#ffc933);
+}
