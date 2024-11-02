@@ -26,7 +26,7 @@ $(document).ready(function ($) {
         },
         pagination: {
             el : ".swiper-pagination",
-            clickable : true,
+            clickable: true,
         },
     });
     
