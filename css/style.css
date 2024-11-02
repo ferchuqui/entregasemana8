@@ -870,10 +870,10 @@ p {
 /* ******************************* */
 
     .xxl-title {
-        text-transform: capitalize;
         font-size: 52px;
         line-height: 72px;
         margin-bottom: 30px;
+        text-transform: capitalize;
     }
 
 
@@ -912,22 +912,104 @@ p {
     padding: 15px 0;
 }
 .call-now i {
-    width: 80px;
-    height: 80px;
-    display: flex;
-    justify-content: center;
     align-items: center;
-    border-radius: 50%;
-    font-size: 26px;
-    margin: 0 auto;
-    margin-bottom: 25px;
     background: #f3f3f5;
+    border-radius: 50%;
     box-shadow: 9px 9px 12px #b2b2b3, -9px -9px 12px #ffffff;
     color: #ff8243;
+    display: flex;
+    font-size: 26px;
+    height: 80px;
+    justify-content: center;
+    margin-bottom: 25px;
+    margin: 0 auto;
+    width: 80px;
 }
 .call-now a {
+    color: #0d0d25;
     font-size: 32px;
     font-weight: 500;
-    color: #0d0d25;
     transition: 0.8s cubic-bezier(0.22, 0.78, 0.45,1.02)
+}
+
+.call-now a:hover, .contact-info a:hover {
+    color: #fcbc30;
+}
+
+#gallery {
+    padding-top: 120px;
+}
+.book-table-img {
+    border-radius: 30px;
+    height:70vh;
+    min-height: 500px;
+}
+
+.back-img {
+    background-position: center;
+    background-size: cover;
+}
+
+.swiper-button-next::after, .swiper-button-prev::after {
+    display: none;
+}
+
+.swiper-button-wp {
+    align-items: center;
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+    margin-top: 60px;
+    position: relative;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    background: #ffffff;
+    border-radius: 50%;
+    box-shadow: -20px 20px 60px #d4d4d4, 20px -20px 60px #ffffff;
+    color: #0d0d25;
+    display: inline-flex;
+    font-size: 24px;
+    height: 60px;
+    margin: 0;
+    overflow: hidden;
+    padding-right: 2px;
+    padding-top: 1px;
+    position: unset;
+    transition: 0.3s;
+    width: 60px;
+}
+
+.swiper-button-next {
+    box-shadow: 20px 20px 60px #d4d4d4, -20px -20px 60px #ffffff;
+    padding-left: 3px;
+}
+
+.swiper-button-prev:hover {
+    box-shadow: inset 5px 5px 20px #d4d4d4, inset -5px -5px 20px #ffffff;
+    color: #fcbc30;
+}
+
+.swiper-button-next:hover {
+    box-shadow: inset -5px 5px 20px #d4d4d4, inset 5px -5px 20px #ffffff;
+    color: #fcbc30;
+}
+.swiper-pagination{
+    background: linear-gradient(145deg, #ececec, #ffffff);
+    border-radius: 60px;
+    bottom: 0 !important;
+    box-shadow: 25px 28px 55px #d4d4d4, -28px -28px 55px #ffffff;
+    color: #000;
+    display: inline-block;
+    left: 50% !important;
+    max-width: fit-content;
+    padding: 10px 20px;
+    transform: translate(-50%, 0);
+}
+.swiper-pagination-bullet {
+    border-radius: 10px;
+    height: 10px;
+    margin: 0px 10px !important;
+    transition: 0.8s cubic-bezier(0.22, 0.78, 0.45, 1.02);
+    width: 10px;
 }
