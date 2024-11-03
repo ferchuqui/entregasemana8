@@ -1018,3 +1018,64 @@ p {
     background: #fcbc30;
     width: 30px;
 }
+
+/****************************/
+.team-slider {
+    position: relative;
+}
+.team-box {
+    background: linear-gradient(145deg, #ececec, #ffffff);
+    border-radius: 30px;
+    padding: 20px;
+    transition: 0.8s cubic-bezier(0.22, 0.78, 0.45, 1.02);
+}
+
+.team-box:hover{
+    transform: scale(1.1);
+}
+.team-img {
+    border-radius: 20px;
+    box-shadow: 9px 9px 18px rgb(194 194 194 / 0.5), -9px -9px  18px rgb(255 255 255 / 0.5);
+    height: 480px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.team-box h3.title {
+    color: #0d0d25;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.social-icon {
+    margin: 15px 0px 10px;
+}
+.social-icon ul li {
+    display: inline-block;
+    margin: 0 6px;
+}
+.social-icon ul li:last-child {
+    margin-right: 0;
+}
+.social-icon ul li:first-child {
+    margin-left: 0;
+}
+.social-icon ul li a {
+    align-items: center;
+    background: linear-gradient(145deg, #e6e6e6, #ffffff);
+    border-radius: 50%;
+    box-shadow: 4px 4px 8px #e6e6e6, -4px -4px 8px #ffffff;
+    color: #0d0d25;
+    display: inline-flex;
+    font-size: 19px;
+    height: 50px;
+    justify-content: center;
+    width: 50px;
+}
+
+.social-icon ul li a:hover {
+    background: #ff8243;
+    color: #ffffff !important;
+}
+
+.social-icon ul li a:hover i{
+    color: #ffffff !important;
+}
