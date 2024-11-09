@@ -2,16 +2,6 @@
 /* font-family: 'Playfair Display', serif;
 font-family: 'Poppins', sans-serif; */
 
-@font-face {
-    font-family: 'Poppins';
-    src: url('fonts/Poppins.woff2') format('woff2'),
-         url('fonts/Poppins.woff') format('woff'),
-         url('fonts/Poppins.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-  }
-
-  
   
 * {
     scroll-behavior: smooth;
@@ -376,7 +366,7 @@ ul {
     }
     .header-btn {
         margin-right: 70px;
-        margin: 0;
+        /* margin: 0; */
     }
     .site-header {
         box-shadow: 0px 10px 55px #d4d4d4;
