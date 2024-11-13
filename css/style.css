@@ -10,6 +10,9 @@ font-family: 'Poppins', sans-serif; */
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+html, body {
+    overflow: hidden;
+}
 /* Estilos básicos del cuerpo */
 body {
     background-color: #f3f3f5;
@@ -537,6 +540,7 @@ ul {
         position: absolute;
         top: 0;
         width: 100%;
+        
     }
 }
 
@@ -1830,6 +1834,7 @@ p {
     }
     #js-scroll-content {
         transform: unset !important;
+        
     }
     body {
         height: auto !important;
