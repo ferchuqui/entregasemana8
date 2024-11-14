@@ -9,10 +9,7 @@ font-family: 'Poppins', sans-serif; */
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-}
-html, body {
-    overflow: hidden;
-}
+}
 /* Estilos básicos del cuerpo */
 body {
     background-color: #f3f3f5;
