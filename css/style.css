@@ -341,6 +341,10 @@ ul {
         padding-bottom: 85px;
         padding-top: 85px;
     }
+    .main-navigation .menu {  /*Habilita el menu vertical*/
+        flex-direction: column; /* Los items del menú en columna */
+        gap: 10px; /* Espacio entre los elementos */
+    }
     .for-des {
         display: none !important;
     }
